@@ -1,0 +1,60 @@
+body {
+    background: rgb(230,230,230);
+}
+
+section {
+    background: rgb(255,255,255);
+    width: 75%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+h1, h2, h3, p {
+    padding: 0 10px 0;
+}
+
+h1 {
+    font-family: arial;
+    font-size: 2.5em;
+    margin-bottom: 4px;
+    padding-bottom: 0px;
+
+}
+hr {
+    clear: both;
+}
+
+h2 {
+    font-family: arial;
+    font-size: 1.5em;
+    float: left;
+    clear: left;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0px
+}
+
+h3 {
+    font-family: arial;
+    font-size: 1em;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+p {
+    clear: left;
+    float: left;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 75%;
+}
