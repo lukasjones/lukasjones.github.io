@@ -1,0 +1,142 @@
+/********************** General Styles ************************/
+
+html, body, header, h1, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: beige;
+  font-family: helvetica;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/********************** Header Styles ************************/
+
+header {
+  background: rgb(36, 139, 136);
+
+}
+
+header h1 {
+  margin: auto;
+  font-size: 3em;
+  color: rgb(184, 177, 177);
+  padding: 20px;
+}
+
+
+/********************** Navigation Styles ************************/
+
+nav {
+  width: 100%;
+  background: grey;
+}
+
+nav ul {
+  list-style-type: none;
+  float: left;
+  clear: both;
+  float: right;
+  width: 100%;
+  background: rgb(163, 54, 54);
+}
+
+nav ul li {
+  float: left;
+  padding: 5px;
+}
+
+nav ul li a {
+  color: lightgray;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  color: white;
+  background: black;
+}
+
+
+/********************** Main Content Styles ************************/
+
+div.container {
+  float: left;
+  clear: both;
+  padding: 2%;
+}
+
+div.half {
+  width: 50%;
+  float: left;
+}
+
+div.third {
+  width: 33.333%;
+  text-align: center;
+  float: left;
+}
+
+p {
+}
+
+img {
+  width: 75%;
+  height: 50%;
+
+}
+
+/********************** Table Styles ************************/
+
+table {
+  width: 90%;
+  margin-left: 2%;
+
+}
+
+td {
+  /*width: 30%;
+  height: 30%;*/
+  border: black solid 1px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+table a:hover {
+  background: red;
+
+}
+/********************** Footer Styles ************************/
+
+footer div.container {
+  background: rgb(36, 139, 136);
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  float: left;
+  margin: 0 10px 0;
+}
+
+footer ul li a {
+  color: lightgray;
+}
+
+footer ul li a:hover {
+  color: white;
+}
+
+ul.right {
+  float: right;
+  margin-right: 5%;
+}
+
