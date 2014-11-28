@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Your page title here</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheets.css">
+    </head>
+
+    <body>
+      <section class="group">
+        <h1>What position is that?</h1>
+        <h2>relative, absolute, fixed and.. static</h2>
+        <h3>11/27/2014</h3>
+        <br>
+        <hr>
+        <p>
+          So position is a CSS property that you can assign to an element that affects the location that an element is placed in relation to itself and other elements.  There are four options you can choose to set position as: relative, absolute fixed and static.
+        </p>
+        <p>
+          Position static is the default value for all elements in css.  Basically it means that it will be positioned normally on the page.  There are no special qualities to it's position.
+        </p>
+        <p>
+          Position relative means that the element is positioned relative to itself. Therefor if you give it an additional property and value of "top: 10px;" you will be positioning it 10px down from where the element is on the page, not in the document.  According to css-tricks.com, this also opens up a cool ability to absolutely position elements within the relatively positioned elements and they will stay absolutely positioned relative to the relative element.
+        </p>
+        <p>
+          Position absolute means that the position is determined by the top left bottom right values specified in relation to the parent elment.  For example if you have a paragraph element in a div element and the paragraph has absolute positioning and top: 30px; and left: 40px;, that element will be 30 pixels from the top and 40 pixels from the left of the inside walls of the div element.
+        </p>
+        <p>
+          Fixed positioning means that the element will stay where it is in relation to the viewport.  This means that when you scroll down the element stays in a fixed position visible on the screen.
+        </p>
+      </section>
+    </body>
+
+    <a href="url">Home</a>
+</html>
