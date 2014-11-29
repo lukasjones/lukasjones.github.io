@@ -11,6 +11,10 @@ body {
 
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -38,7 +42,6 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;
   float: left;
   clear: both;
   float: right;
@@ -68,6 +71,8 @@ div.container {
   float: left;
   clear: both;
   padding: 2%;
+  width: 98%;
+  margin: 0 1% 0 1%;
 }
 
 div.half {
@@ -92,18 +97,42 @@ img {
 
 /********************** Table Styles ************************/
 
+div.box {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 20px 0 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.box:hover {
+  background: gray;
+}
+
+div.box h1, div.box p {
+  margin: auto;
+}
+
 table {
   width: 90%;
   margin-left: 2%;
+  display: inline-block;
 
 }
 
 td {
-  /*width: 30%;
-  height: 30%;*/
   border: black solid 1px;
   vertical-align: middle;
   text-align: center;
+  display: inline-block;
+  padding: 10px;
 }
 
 
@@ -118,9 +147,7 @@ footer div.container {
   width: 100%;
 }
 
-footer ul {
-  list-style-type: none;
-}
+
 
 footer ul li {
   float: left;
