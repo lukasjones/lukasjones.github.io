@@ -1,5 +1,6 @@
 body {
-    background: rgb(230,230,230);
+    /*background: rgb(230,230,230);*/
+    background: beige;
 }
 
 section {
@@ -57,4 +58,24 @@ p {
 a {
     text-decoration: none;
     margin-left: 75%;
+}
+
+code {
+    float: left;
+    clear: left;
+    margin: 10px;
+    background: black;
+    color: gray;
+    clear: both;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+
 }

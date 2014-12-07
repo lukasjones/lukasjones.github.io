@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Your page title here</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+    </head>
+
+    <body>
+      <section class="group">
+        <h1>Arrays vs Hashes</h1>
+        <h2>Harray!</h2>
+        <h3>12/3/2014</h3>
+        <br>
+        <hr>
+        <p>
+          So, I'm going to start of by introducing what arrays and hashes are exactly.  In the broadest sense, arrays and hashes are containers that store data and information.  This could be numbers, text, other arrays, other hashes, methods and probably other stuff I can't think of right now.  I would say that alot of the time, they are used to model something in real life like a bank account or a person's profile information.  Below, I have included an example of an array and a hash.
+        </p>
+        <code>
+          # This is an array
+          <br>
+          my_array = [1, "two", [3, 4], def count return 5 end]
+          <span class="example">ex.1</span>
+        </code>
+        <code>
+          # This is a hash
+          <br>
+          my_hash = {one: 1, two: 2, three: "three", four: [4, 5]}
+          <span class="example">ex.2</span>
+        </code>
+        <p>
+          Arrays and Hashes are both similar and unique.  Both have an index that you use to access the contents in the relative object.  The way you access these contents is very different however.  With an array, you use a numer that corresponds to the information you're trying to access's position in the array (see example 3).  It's important to know that when you access an array, the first piece of information is accessed with the number 0, not 1.  What you're seeing when you're defining values in the hash, is a key (the first word with a :) and a value (the second piece that could be any of the types of data).  When you access a hash, it's similar notation except you aren't using a number.  Instead, you are using the key to access the value (see example 4).
+        </p>
+        <code>
+          #to access an array
+          <br>
+          my_array[1]  # => 2
+          <br>
+          my_array[2]  # => [3, 4]
+          <span class="example">ex.3</span>
+        </code>
+        <code>
+          # To access a hash
+          <br>
+          my_hash[:one]  # => 1
+          <br>
+          my_hash[:four]  # => [4, 5]
+          <span class="example">ex.4</span>
+        </code>
+        <p>
+          Another way hashes and arrays differ is in the different ways to add and remove elements from them.  Adding to or changing values in arrays and hashes is similar to their way of calling them except that you put an equal sign after and a value(see examples 5 and 6).
+        </p>
+        <code>
+          #to access an array
+          <br>
+          my_array[1] = "ObiOne"  # => "ObiOne"
+          <br>
+          my_array[2]  # => [3, 4]
+          <span class="example">ex.3</span>
+        </code>
+        <code>
+          # To access a hash
+          <br>
+          my_hash[:one]  # => 1
+          <br>
+          my_hash[:four]  # => [4, 5]
+          <span class="example">ex.4</span>
+        </code>
+        <p>
+          It's worth noting that there is a different way to create and access hashes.  You can use my_hash = {"one" => 1, "two" => 2} to create the hash and access it by using my_hash["one"] which will return 1.
+        </p>
+        <p>Hope this has been helpful!</p>
+      </section>
+    </body>
+
+    <a href="blog.html">back</a>
+</html>
