@@ -1,0 +1,42 @@
+/* include your css here */
+
+
+
+html {
+    background :#5AEBC2 ;
+    padding: 0;
+    margin: 0;
+    }
+.header {
+   color : yellow;
+   background-color : #4F0C7C;
+   border : 4px solid black;
+   }
+
+#authors {
+   color : #93064A;
+   border : 2px solid black;
+   width : 250px;
+   float :right;
+   background: yellow;
+
+}
+
+h6 {
+   margin : 10px 10px 10px 10px ;
+   text-align : center;
+   font-size: 1.1em;
+}
+
+
+
+
+
+
+img {
+   width: 30%;
+   float: right;
+   clear: right;
+   margin-top: 30px;
+}
+
