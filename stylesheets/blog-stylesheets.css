@@ -47,6 +47,7 @@ h3 {
 p {
     clear: left;
     float: left;
+    font-size: 1.2em;
 }
 
 .group:after {
