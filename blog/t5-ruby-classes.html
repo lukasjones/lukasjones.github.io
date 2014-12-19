@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Classes</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+    </head>
+
+    <body>
+      <section class="group">
+        <h1>Stay Classy California</h1>
+        <h2>All About Classes</h2>
+        <h3>12/16/2014</h3>
+        <br>
+        <hr>
+        <p>
+          Hello blog readers, <br>
+          this week, we are going to be talking about classes if you couldn't tell by the title.  Classes, like pretty much everything else in Ruby, are objects.  They have the same inherent methods as objects and the same properties of an object.  The big difference between classes and other ruby objects though, is the ability to create new objects from said classes. Let me explain that a little better.
+        </p>
+        <p>
+          Classes are defined by typing class "ClassName" with camel case. You may then choose to define an initialize method that will run every time you create a new object with that class otherwise known as instantiating or creating and instance.  In this initialize method, it's common to set some of the variables that you will be using.  For example, if you were creating a person object you might want to set an age and name.  These variables are set to be something called an instance variable.  Instance variables are prefixed with the '@' symbol.  The reason we use these is because they can be accessed by any of the methods in a class but won't interfere with other variables outside of the class.  After the initialize method, you usually create some other methods that are specific to that class.  For example you could create a greeting method that would say "Hello everyone!" when called or an introduction method that said "My name is 'name' and I am '22'". Then all you have left to do is end your methods and class declaration and instantiate a new object from the class.  The syntax for that is ClassName.new(variables that go into initialize method).  In our example it would be me = Person.new(22, "Lukas"). If you look below, There are examples of everything talked about in this method the way it would look in a ruby file.
+        </p>
+        <code>
+          class Person <br>
+          def initialize(age, name)  <br>
+          @age = age <br>
+          @name = name <br>
+          end <br>
+          <br>
+          def greeting <br>
+          puts "Hello everyone!" <br>
+          end <br>
+          <br>
+          def introduction <br>
+          puts "My name is #{@name} and I am #{@age} years old" <br>
+          end <br>
+          end <br>
+          <br>
+          me = Person.new(22, "Lukas") <br>
+          me.greeting #=> "Hello everyone!" <br>
+          me.introduction #=> "My name is Lukas and I am 22 years old"
+        </code>
+      </section>
+    </body>
+
+    <a href="blog.html">back</a>
+</html>

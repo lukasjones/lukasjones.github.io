@@ -22,7 +22,7 @@ a {
 /********************** Header Styles ************************/
 
 header {
-  background: rgb(36, 139, 136);
+  background: rgb(99, 119, 119);
 
 }
 
@@ -46,7 +46,7 @@ nav ul {
   clear: both;
   float: right;
   width: 100%;
-  background: rgb(163, 54, 54);
+  background: rgb(68, 108, 135);
 }
 
 nav ul li {
@@ -72,7 +72,6 @@ div.container {
   clear: both;
   padding: 2%;
   width: 98%;
-  margin: 0 1% 0 1%;
 }
 
 div.half {
