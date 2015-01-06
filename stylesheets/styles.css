@@ -1,168 +1,183 @@
-/********************** General Styles ************************/
-
-html, body, header, h1, ul, li {
+h1, p, header, html, body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background: beige;
-  font-family: helvetica;
-
-}
-
-ul {
-  list-style-type: none;
 }
 
 a {
   text-decoration: none;
 }
 
-/********************** Header Styles ************************/
-
+body {
+  background: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/*************** header styles ***************/
+div.filler {
+  width: 100%;
+  height: 500px;
+}
 header {
-  background: rgb(99, 119, 119);
-
+  position: absolute;
+  width: 100%;
+  background: url(../images/code_bw.jpg);
+  background-size: cover;
+  height: 500px;
+}
+header p {
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+  font-size: 40px;
+  font-weight: bold;
 }
 
 header h1 {
-  margin: auto;
-  font-size: 3em;
-  color: rgb(184, 177, 177);
+  padding-top: 190px;
+  color: rgba(255, 168, 0, 0.5);
+  font-size: 5em;
+  text-align: center;
+  font-weight: none;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+header nav ul li {
+  float: left;
+  margin: 5px;
+  font-size: 20px;
+  color: gray;
+  padding: 10px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.2)
+
+}
+
+header nav ul li a {
+  color: white;
   padding: 20px;
 }
 
-
-/********************** Navigation Styles ************************/
-
-nav {
-  width: 100%;
-  background: grey;
+header nav ul li:hover {
+  background: rgba(0,0,0,0.5);
 }
 
-nav ul {
-  float: left;
-  clear: both;
-  float: right;
-  width: 100%;
-  background: rgb(68, 108, 135);
-}
-
-nav ul li {
-  float: left;
-  padding: 5px;
-}
-
-nav ul li a {
-  color: lightgray;
-  padding: 5px;
-}
-
-nav ul li a:hover {
-  color: white;
-  background: black;
-}
-
-
-/********************** Main Content Styles ************************/
-
+/***************** Section Styles *******************/
 div.container {
-  float: left;
-  clear: both;
-  padding: 2%;
-  width: 98%;
+  width: 80%;
+  margin: 0 auto;
 }
 
-div.half {
-  width: 50%;
-  float: left;
+section h1 {
+  font-size: 2.5em;
 }
 
-div.third {
-  width: 33.333%;
+section {
+  margin: 200px 0 200px;
   text-align: center;
-  float: left;
+  color: white;
+}
+section ul li{
+  display: inline;
+  margin: 20px;
+  padding: 20px;
 }
 
-p {
+section ul li h1 {
+  font-size: 3em;
+  display: inline;
 }
 
-img {
-  width: 75%;
-  height: 50%;
-
+section ul li h1 a {
+  color: white;
+  -webkit-transition: color 0.75s;
+  transition: color 0.75s;
 }
 
-/********************** Table Styles ************************/
+section ul li h1 a:hover {
+  /*background: rgba(255,255,255,0.4);*/
+  color: rgba(255, 168, 0, 0.5);
+}
+
+
+/***************** Blog Styles *******************/
+
+div.row {
+  width: 100%;
+  height: 200px;
+  padding-bottom: 20px;
+}
 
 div.box {
-  border: 1px solid black;
+  display: inline-block;
+  color: black;
   width: 200px;
   height: 200px;
-
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  margin: 0 20px 0 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  margin: 1%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transition: background-color 0.75s, color 0.75s;
+  transition: background-color 0.75s, color 0.75s;
 }
 
 div.box:hover {
-  background: gray;
+  color: white;
+  background-color: rgba(38,105,246,0.2);
 }
 
-div.box h1, div.box p {
-  margin: auto;
+div.box p {
+  margin-top: 80px;
+  font-size: 2em;
 }
 
-table {
-  width: 90%;
-  margin-left: 2%;
-  display: inline-block;
-
-}
-
-td {
-  border: black solid 1px;
-  vertical-align: middle;
-  text-align: center;
-  display: inline-block;
-  padding: 10px;
+.break {
+  padding-bottom: 200px;
 }
 
 
-table a:hover {
-  background: red;
 
-}
-/********************** Footer Styles ************************/
+/***************** Footer Styles *******************/
 
-footer div.container {
-  background: rgb(36, 139, 136);
+footer {
+  bottom: 0;
+  right: 0;
   width: 100%;
+  height: 100px;
+  background: rgba(255, 168, 0, 0.5);
 }
 
 
+
+footer ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 500px;
+
+  text-align: center;
+  height: 20px;
+  /*margin-left: 20%;*/
+}
 
 footer ul li {
+  margin: 8px;
+  padding: 8px;
+  text-align: center;
   float: left;
-  margin: 0 10px 0;
+  display: inline;
 }
 
-footer ul li a {
-  color: lightgray;
+footer ul li img {
+  width: 50px;
+  height: 50px;
 }
 
-footer ul li a:hover {
-  color: white;
+footer ul li img:hover {
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px;
 }
-
-ul.right {
-  float: right;
-  margin-right: 5%;
-}
-
