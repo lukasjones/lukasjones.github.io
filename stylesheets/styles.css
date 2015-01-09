@@ -7,6 +7,13 @@ a {
   text-decoration: none;
 }
 
+/*clear fix*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   background: black;
   font-family: 'Josefin Sans', sans-serif;
@@ -132,7 +139,7 @@ div.box:hover {
 }
 
 div.box p {
-  margin-top: 80px;
+  margin-top: 60px;
   font-size: 2em;
 }
 
@@ -140,7 +147,59 @@ div.box p {
   padding-bottom: 200px;
 }
 
+/***************** Project Styles *******************/
 
+div.big-box {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background: rgba(255,255,255,0.8);
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+
+  -webkit-transition: background-color 0.75s, color 0.75s;
+  transition: background-color 0.75s, color 0.75s;
+}
+
+div.big-box:hover {
+  color: white;
+  background: rgba(255,255,255,0.3);
+  border: 2px rgba(255,255,255,0.3) solid;
+}
+
+div.big-box p {
+  margin-top: 130px;
+}
+
+/***************** Footer Styles *******************/
+
+
+div.break {
+  padding-top: 200px;
+}
+
+
+input {
+  float: left;
+  clear: left;
+  width: 91.3%;
+  padding: 10px;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+input.fifty {
+  width: 44%;
+  float: left;
+  clear: none;
+}
+
+.textarea {
+  width: 91.3%;
+  height: 100px;
+}
 
 /***************** Footer Styles *******************/
 
