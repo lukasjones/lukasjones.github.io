@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>OOPS</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+    </head>
+
+    <body>
+      <section class="group">
+        <h1>OOPsy</h1>
+        <h2>Daisy</h2>
+        <h3>1/9/2015</h3>
+        <br>
+        <hr>
+        <p>
+          This week we were given the assignment of researching a specific part of Object Oriented Programming (OOP).  I like to choose topics that I understand the least so I can learn the most from it. With that in mind; today we will be talking about class methods.
+        </p>
+        <p>
+            A class method is a method that is called directly on the class.  For example, if you have a class Car and a class method drive then a class method being called on Car would look like "Car.drive".  This is different from instance methods where the notation would be "Car.new.drive".
+        </p>
+        <p>
+          Class Methods can be called in a couple different ways which are shown below in the code section.
+        </p>
+        <code>
+          # First way to define class method<br>
+          class Car<br>
+            <span class="tab"></span>def self.drive<br>
+              <span class="tabtwo"></span>puts "class method driving"<br>
+            <span class="tab"></span>end<br>
+          end<br>
+          <br>
+          # Second way to define class method<br>
+          class Car<br>
+            <span class="tab"></span>class << self<br>
+              <span class="tabtwo"></span>def drive<br>
+                <span class="tab"></span><span class="tabtwo"></span>puts "class method driving"<br>
+              <span class="tabtwo"></span>end<br>
+            <span class="tab"></span>end<br>
+          end<br>
+          <br>
+          # Third way to define class method<br>
+          class Car<br>
+          end<br>
+          new_car = Car.new<br>
+          def new_car.drive<br>
+          puts "class method driving"<br>
+          end<br>
+
+        </code>
+        <p>
+          Class methods are used to perform an action on the class as a whole.  There seems to be a good amount of people who believe class methods are unnecessary.  At this point, I don't know enough about their reasoning to confirm or deny it.  They say that people who rely too heavily on class methods turn their OOP into Procedural Programming.  Since we're working in an Object Oriented programming language right now I guess it's better to just stick with instance methods instead of falling into bad habits that will be hard to get out of later.
+        </p>
+      </section>
+    </body>
+
+    <a href="blog.html">back</a>
+</html>

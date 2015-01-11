@@ -159,8 +159,8 @@ div.big-box {
   color: black;
   border: 2px solid black;
 
-  -webkit-transition: background-color 0.75s, color 0.75s;
-  transition: background-color 0.75s, color 0.75s;
+  -webkit-transition: background-color 0.75s, color 0.75s, border 0.75s;
+  transition: background-color 0.75s, color 0.75s, border 0.75s;
 }
 
 div.big-box:hover {
