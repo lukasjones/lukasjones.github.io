@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>SQL Cheat Sheet</title>
+  <link rel="stylesheet" type="text/css" href="cheats.css">
+</head>
+<body>
+
+  <header>
+    <h1>SQL Cheat Sheet</h1>
+  </header>
+
+  <div id="side-index">
+    <ul>
+      <li><a href="#select">SELECT & FROM</a></li>
+      <li><a href="#where">WHERE</a></li>
+      <li><a href="#and">AND & OR</a></li>
+      <li><a href="#order">ORDER BY</a></li>
+      <li><a href="#">INSERT INTO</a></li>
+      <li><a href="#">UPDATE</a></li>
+      <li><a href="#">DELETE</a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#">SELECT TOP</a></li>
+      <li><a href="#">LIKE</a></li>
+      <li><a href="#">WILDCARDS</a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <h1>Main Content</h1>
+
+    <p>What is SQL you ask?</p>
+    <p>
+      SQL stands for Structure Query Language.  It's used to ask and tell the database to show and do stuff.
+    </p>
+    <p>
+      Bellow are a list of cheats (query's(commands)) and their outputs.  Commands/querys/cheats are written in upper case.  This is not required when querying the database but is done a lot to differentiate commands from other pieces of the statemtent.
+    </p>
+    <table>
+      <caption style="padding-bottom: 5px;">grocery_list</caption>
+      <tr>
+        <th>id</th>
+        <th>list_name</th>
+        <th>total_cost</th>
+        <th>total_weight</th>
+        <th>completed?</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Safeway</td>
+        <td>56.98</td>
+        <td>20</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Trader Joes</td>
+        <td>25.00</td>
+        <td>7</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Whole Foods</td>
+        <td>299.99</td>
+        <td>56</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Costco</td>
+        <td>200.00</td>
+        <td>50</td>
+        <td>no</td>
+      </tr>
+    </table>
+    <p>^^ This table will be referenced in the cheats so study up!</p>
+    <ul>
+      <li id="select">
+        <h2>
+          SELECT and FROM
+        </h2>
+        <p>
+          <strong>SELECT</strong> is used in the majority of querys to ask for information <strong>FROM</strong> a table.  Alternatively, it can also be used to <strong>SELECT</strong> and change something in a table(more on that later).
+        </p>
+        <code>
+          SELECT * FROM table_name;
+          <br>
+          // This code selects all the tables from the specified table_name.
+          <br>
+          SELECT column_name_1, column_name_2 FROM table_name; <br>
+          // You can select specific columns by using the name of the columns. <br>
+          SELECT * FROM grocery_list; <br>
+          // Ouput:
+          <table><tr> <th>id</th> <th>list_name</th> <th>total_cost</th> <th>total_weight</th> <th>completed?</th> </tr> <tr> <td>1</td> <td>Safeway</td> <td>56.98</td> <td>20</td> <td>no</td> </tr> <tr> <td>2</td> <td>Trader Joes</td> <td>25.00</td> <td>7</td> <td>no</td> </tr> <tr> <td>3</td> <td>Whole Foods</td> <td>299.99</td> <td>56</td> <td>yes</td> </tr> <tr> <td>4</td> <td>Costco</td> <td>200.00</td> <td>50</td> <td>no</td> </tr> </table><br>
+          SELECT id, list_name FROM grocery_list;<br>
+          // Ouput:<br>
+          <table> <tr> <th>id</th> <th>list_name</th> </tr> <tr> <td>1</td> <td>Safeway</td> </tr> <tr> <td>2</td> <td>Trader Joes</td> </tr> <tr> <td>3</td> <td>Whole Foods</td> </tr> <tr> <td>4</td> <td>Costco</td> </tr> </table>
+        </code>
+      </li>
+      <li id="where">
+        <h2>WHERE</h2>
+        <p>
+          <strong>WHERE</strong> is used to query a specific row in a table.
+        </p>
+        <code>
+          SELECT * FROM table_name WHERE column_name (operator) value;<br>
+          //  This will select all the columns where a specific column_name is a specific value.  Basically it gives you the row or rows where that column_name = the value.<br>
+          // For example.<br>
+          SELECT * FROM grocery_list WHERE id = 3;<br>
+          // Output:<br>
+          <table> <tr> <th>id</th> <th>list_name</th> <th>total_cost</th> <th>total_weight</th> <th>completed?</th> </tr> <tr> <td>3</td> <td>Whole Foods</td> <td>299.99</td> <td>56</td> <td>yes</td> </tr> </table>
+        </code>
+      </li>
+      <li id="and">
+        <h2>
+          AND & OR
+        </h2>
+        <p>
+          <strong>AND</strong> and <strong>OR</strong> are used in SQL in conjunction with <strong>WHERE</strong> to limit or open the search. It's just like the Ruby && and ||.
+        </p>
+        <code>
+          SELECT * FROM table_name WHERE column_name_1 = value AND column_name_2 = value;<br>
+          // This will select all the columns where a column_name_1 = the value specified AND column_name_2 = the value specified.  If they are not both true, the row will not be selected.<br>
+          SELECT * FROM grocery_list WHERE ID = 3 AND completed = 'yes';<br>
+          // Output:<br>
+          <table> <tr> <th>id</th> <th>list_name</th> <th>total_cost</th> <th>total_weight</th> <th>completed?</th> </tr> <tr> <td>3</td> <td>Whole Foods</td> <td>299.99</td> <td>56</td> <td>yes</td> </tr> </table><br>
+          SELECT * FROM table_name WHERE column_name_1 = value OR column_name_2 = value;<br>
+          // This will select all the columns where a column_name_1 = the value or column_name_2 = the value.  Basically it's selecting the rows that return true for both the WHERE statements.<br>
+          SELECT * FROM grocery_list WHERE id = 2 OR id = 4;<br>
+          // Output:<br>
+          <table> <tr> <th>id</th> <th>list_name</th> <th>total_cost</th> <th>total_weight</th> <th>completed?</th> </tr> <tr> <td>2</td> <td>Trader Joes</td> <td>25.00</td> <td>7</td> <td>no</td> </tr> <tr> <td>4</td> <td>Costco</td> <td>200.00</td> <td>50</td> <td>no</td> </tr> </table><br>
+        </code>
+      </li>
+      <li id="order">
+        <h2>
+          ORDER BY
+        </h2>
+        <p>
+          <strong>ORDER BY</strong> is used to order your output from a <strong>SELECT</strong> statement.  You can order items in <strong>ASC</strong>ending and <strong>DESC</strong>ending
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+      <li>
+        <p>
+
+        </p>
+        <code>
+
+        </code>
+        <p>
+
+        </p>
+      </li>
+    </ul>
+
+
+  </div>
+  <div class="spaces"></div>
+</body>
+</html>

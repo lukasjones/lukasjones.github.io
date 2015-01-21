@@ -1,0 +1,35 @@
+body {
+  font-size: 1.1em;
+}
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+div#side-index {
+  position: fixed;
+  left: 0;
+  width: 150px;
+}
+
+div#main {
+  margin-left: 150px;
+  max-width: 900px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+.spaces {
+  padding-bottom: 30000px;
+}
+
