@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -5,12 +8,13 @@
   <link rel="stylesheet" type="text/css" href="cheats.css">
 </head>
 <body>
+  <div id="container">
 
   <header>
     <h1>SQL Cheat Sheet</h1>
   </header>
 
-  <div id="side-index">
+  <nav>
     <ul>
       <li><a href="#select">SELECT & FROM</a></li>
       <li><a href="#where">WHERE</a></li>
@@ -52,59 +56,61 @@
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div id="main">
-    <h1>Main Content</h1>
+  <section>
+    <article>
+      <h2>Main Content</h2>
 
-    <p>What is SQL you ask?</p>
-    <p>
-      SQL stands for Structure Query Language.  It's used to ask and tell the database to show and do stuff.
-    </p>
-    <p>
-      Bellow are a list of cheats (query's(commands)) and their outputs.  Commands/querys/cheats are written in upper case.  This is not required when querying the database but is done a lot to differentiate commands from other pieces of the statemtent.
-    </p>
-    <table>
-      <caption style="padding-bottom: 5px;">grocery_list</caption>
-      <tr>
-        <th>id</th>
-        <th>list_name</th>
-        <th>total_cost</th>
-        <th>total_weight</th>
-        <th>completed?</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Safeway</td>
-        <td>56.98</td>
-        <td>20</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Trader Joes</td>
-        <td>25.00</td>
-        <td>7</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Whole Foods</td>
-        <td>299.99</td>
-        <td>56</td>
-        <td>yes</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Costco</td>
-        <td>200.00</td>
-        <td>50</td>
-        <td>no</td>
-      </tr>
-    </table>
-    <p>^^ This table will be referenced in the cheats so study up!</p>
-    <ul>
-      <li id="select">
+      <p>What is SQL you ask?</p>
+      <p>
+        SQL stands for Structure Query Language.  It's used to ask and tell the database to show and do stuff.
+      </p>
+      <p>
+        Bellow are a list of cheats (query's(commands)) and their outputs.  Commands/querys/cheats are written in upper case.  This is not required when querying the database but is done a lot to differentiate commands from other pieces of the statemtent.
+      </p>
+      <table>
+
+        <caption style="padding-bottom: 5px;">grocery_list</caption>
+        <tr>
+          <th>id</th>
+          <th>list_name</th>
+          <th>total_cost</th>
+          <th>total_weight</th>
+          <th>completed?</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Safeway</td>
+          <td>56.98</td>
+          <td>20</td>
+          <td>no</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Trader Joes</td>
+          <td>25.00</td>
+          <td>7</td>
+          <td>no</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Whole Foods</td>
+          <td>299.99</td>
+          <td>56</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Costco</td>
+          <td>200.00</td>
+          <td>50</td>
+          <td>no</td>
+        </tr>
+      </table>
+      <p>^^ This table will be referenced in the cheats so study up!</p>
+   </article>
+      <article class="boxed" id="select">
         <h2>
           SELECT and FROM
         </h2>
@@ -125,8 +131,8 @@
           // Ouput:<br>
           <table> <tr> <th>id</th> <th>list_name</th> </tr> <tr> <td>1</td> <td>Safeway</td> </tr> <tr> <td>2</td> <td>Trader Joes</td> </tr> <tr> <td>3</td> <td>Whole Foods</td> </tr> <tr> <td>4</td> <td>Costco</td> </tr> </table>
         </code>
-      </li>
-      <li id="where">
+      </article >
+      <article class="boxed" id="where">
         <h2>WHERE</h2>
         <p>
           <strong>WHERE</strong> is used to query a specific row in a table.
@@ -139,8 +145,8 @@
           // Output:<br>
           <table> <tr> <th>id</th> <th>list_name</th> <th>total_cost</th> <th>total_weight</th> <th>completed?</th> </tr> <tr> <td>3</td> <td>Whole Foods</td> <td>299.99</td> <td>56</td> <td>yes</td> </tr> </table>
         </code>
-      </li>
-      <li id="and">
+      </article >
+      <article class="boxed" id="and">
         <h2>
           AND & OR
         </h2>
@@ -159,8 +165,8 @@
           // Output:<br>
           <table> <tr> <th>id</th> <th>list_name</th> <th>total_cost</th> <th>total_weight</th> <th>completed?</th> </tr> <tr> <td>2</td> <td>Trader Joes</td> <td>25.00</td> <td>7</td> <td>no</td> </tr> <tr> <td>4</td> <td>Costco</td> <td>200.00</td> <td>50</td> <td>no</td> </tr> </table><br>
         </code>
-      </li>
-      <li id="order">
+      </article >
+      <article class="boxed" id="order">
         <h2>
           ORDER BY
         </h2>
@@ -173,8 +179,8 @@
         <p>
 
         </p>
-      </li>
-      <li>
+      </article>
+      <article  class="boxed">
         <p>
 
         </p>
@@ -184,176 +190,11 @@
         <p>
 
         </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-      <li>
-        <p>
-
-        </p>
-        <code>
-
-        </code>
-        <p>
-
-        </p>
-      </li>
-    </ul>
+      </article >
 
 
+
+  </section>
   </div>
-  <div class="spaces"></div>
 </body>
 </html>
