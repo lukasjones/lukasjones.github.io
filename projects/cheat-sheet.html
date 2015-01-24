@@ -5,10 +5,10 @@
 <html>
 <head>
   <title>SQL Cheat Sheet</title>
-  <link rel="stylesheet" type="text/css" href="cheats.css">
+  <link rel="stylesheet" type="text/css" href="cheat-stylesheet.css">
 </head>
 <body>
-  <div id="container">
+  <div id="wrapper">
 
   <header>
     <h1>SQL Cheat Sheet</h1>
@@ -16,9 +16,9 @@
 
   <nav>
     <ul>
-      <li><a href="#select">SELECT & FROM</a></li>
+      <li><a href="#select">SELECT &amp; FROM</a></li>
       <li><a href="#where">WHERE</a></li>
-      <li><a href="#and">AND & OR</a></li>
+      <li><a href="#and">AND &amp; OR</a></li>
       <li><a href="#order">ORDER BY</a></li>
       <li><a href="#">INSERT INTO</a></li>
       <li><a href="#">UPDATE</a></li>
@@ -39,27 +39,12 @@
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
+
     </ul>
   </nav>
 
   <section>
-    <article>
+    <article id="top">
       <h2>Main Content</h2>
 
       <p>What is SQL you ask?</p>
@@ -67,7 +52,7 @@
         SQL stands for Structure Query Language.  It's used to ask and tell the database to show and do stuff.
       </p>
       <p>
-        Bellow are a list of cheats (query's(commands)) and their outputs.  Commands/querys/cheats are written in upper case.  This is not required when querying the database but is done a lot to differentiate commands from other pieces of the statemtent.
+        Below are a list of cheats (query's(commands)) and their outputs.  Commands/querys/cheats are written in upper case.  This is not required when querying the database but is done a lot to differentiate commands from other pieces of the statemtent.
       </p>
       <table>
 
@@ -108,8 +93,8 @@
           <td>no</td>
         </tr>
       </table>
-      <p>^^ This table will be referenced in the cheats so study up!</p>
-   </article>
+      <sub>^^ This table will be referenced in the cheats so study up!</caption>
+   </sub>
       <article class="boxed" id="select">
         <h2>
           SELECT and FROM
@@ -148,10 +133,10 @@
       </article >
       <article class="boxed" id="and">
         <h2>
-          AND & OR
+          AND &amp; OR
         </h2>
         <p>
-          <strong>AND</strong> and <strong>OR</strong> are used in SQL in conjunction with <strong>WHERE</strong> to limit or open the search. It's just like the Ruby && and ||.
+          <strong>AND</strong> and <strong>OR</strong> are used in SQL in conjunction with <strong>WHERE</strong> to limit or open the search. It's just like the Ruby &amp;&amp; and ||.
         </p>
         <code>
           SELECT * FROM table_name WHERE column_name_1 = value AND column_name_2 = value;<br>
@@ -191,9 +176,6 @@
 
         </p>
       </article >
-
-
-
   </section>
   </div>
 </body>

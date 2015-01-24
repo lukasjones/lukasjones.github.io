@@ -1,10 +1,12 @@
 body {
   font-size: 1.1em;
+  font-family: sans-serif;
 }
 
-.container {
-  margin: auto 0;
-  width: 1050px;
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
 }
 
 header {
@@ -17,38 +19,57 @@ header h1 {
 
 nav {
   position: fixed;
-  left: 0;
+  left: auto;
   width: 150px;
 }
 
 ul {
   list-style-type: none;
+  font-size: .9em;
+}
+
+li {
+  padding-bottom: 5px;
 }
 
 section {
-  margin-left: 150px;
-  max-width: 900px;
-  border-left: 1px solid black;
-  padding-left: 10px;
+  margin-left: 160px;
+  padding-left: 30px;
+  max-width: 800px;
+  border-left: 2px solid black;
+}
 
+.boxed {
+  margin: 10px 0;
+  border: 2px solid #333;
+  padding: 10px 20px;
+}
+
+h2 {
+  margin-top: 5px;
+  padding-top: 0;
+}
+
+p {
+  font-family: serif;
 }
 
 table {
   border-collapse: collapse;
   font-family: sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+caption {
+  font-size: .9em;
+  font-weight: bold;
+  color: #333;
 }
 
 table, th, td {
   border: 1px solid black;
+  padding: 1px 3px;
+  text-align: center;
 }
-
-caption {
-  font-weight: bold;
-  font-style: italic;
-}
-
-
-.spaces {
-  padding-bottom: 30000px;
-}
-
