@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Active Record</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+    </head>
+
+    <body>
+      <section class="group">
+        <h1>Active Record Spinning...</h1>
+        <h3>1/24/2015</h3>
+        <br>
+        <hr>
+        <p>
+          This week I'm going to write about Active Record.  Active record is something that has stumped me time and time again.  I used to use team treehouse and they had a class on it which just confused the heck out of me so I'm hoping now that I have a little more knowledge of Ruby, I can tackle this problem with more confidence!
+        </p>
+        <p>
+          Active record is a class with a mega ton of awesome preprogrammed methods. According to the Ruby website, activerecord is also the M in MVC (Model View Controller) because it's what you use to create models in your Rails applications.  If you don't know anyting about models from mvs, models are used to model data! I know, big shock!  Models typically get data from the database and then send it back to the controller so it can do something else with it.  Some of the super active record powers include: Representing models and their data and thier associations, validating models before they go to the database and performing database operations.  Basically it makes it so you don't have to program as many functions to interact with your model.
+        </p>
+        <p>
+          I recently started a <a href="https://www.railstutorial.org/book" class="inline">RUBY ON RAILS TUTORIAL (3RD ED.)</a> by Michael Hartl and we dived into active record a bit.  We used ActiveRecord::Base to create a user model which we used to put validations on specific columns in the table that is represented by the user model.  A validation if you were wondering, is a piece of code that checks if the data is the way you want it.  For example, in this tutorial, I am putting a validation on the presence of email and password. I put a validation on the format of the email as well which ensures that the email is not just a bunch of incoherent letters.  In this tutorial, ActiveRecord::Migration is also used to add columns to the table.  Some of this is done atutomatically when you use the rails generate command but you can also input it by hand by going to the class that inherits from ActiveRecord::Migration and adding columns and their types to the table.
+        </p>
+        <p>
+          To be honest, even after all my research and tutorial, I still don't completely understand it.  I'm hoping that more exposure with it will give me the knowledge that I'm lacking right now.
+        </p>
+      </section>
+    </body>
+
+    <a href="blog.html">back</a>
+</html>

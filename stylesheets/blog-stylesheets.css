@@ -58,9 +58,15 @@ p {
   clear: both;
 }
 
+
+
 a {
     text-decoration: none;
     margin-left: 75%;
+}
+
+a.inline {
+    margin: 0;
 }
 
 code {
