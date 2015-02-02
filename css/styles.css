@@ -122,17 +122,23 @@ hr {
   background: white;
   display: inline-block;
   text-align: center;
-  padding: 100px;
-
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  -webkit-transition: background 0.75s, color 0.75s;
+  transition: background 0.75s, color 0.75s;
 }
 
 .big-box:hover {
   background: black;
+  color: rgba(255, 168, 0, 0.5);
 }
 
 .big-box p {
-  padding: 50%;
+  padding-top: 130px;
 }
+
+
 
 /********************* FORM STYLES ******************/
 
@@ -149,7 +155,7 @@ input[type="text"]:focus {
 }
 
 textarea {
-  height: auto;
+  max-width: 100%;
 }
 
 
