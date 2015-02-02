@@ -1,147 +1,512 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>my_site</title>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
-</head>
-<bodyn id="blog">
-  <header>
-    <h1>Blog</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="filler"></div>
-  <div class="container">
-    <section>
-      <h1 class="break">Technical</h1>
-      <a href="t1-git-blog.html">
-        <div class="box">
-          <p>Do you Git it? man<br>
-          11/20/2014</p>
-        </div>
-      </a>
-      <a href="t2-css-design.html">
-        <div class="box">
-          <p>What Position is that?<br>
-            11/27/2014</p>
-        </div>
-      </a>
-      <a href="t3-arrays-hashes.html">
-        <div class="box">
-          <p>Arrays vs Hashes<br>
-            12/3/2014</p>
-        </div>
-      </a>
-      <a href="t4-enumerable-methods.html">
-        <div class="box">
-          <p>Teaching the group<br>
-            12/11/2014</p>
-        </div>
-      </a>
-      <a href="t5-ruby-classes.html">
-        <div class="box">
-          <p>Stay Classy California<br>
-            12/16/2014</p>
-        </div>
-      </a>
-      <a href="t6-oop-concepts.html">
-        <div class="box">
-          <p>OOPsy <br>Daisy<br>
-             1/9/2015</p>
-        </div>
-      </a>
-      <a href="t7-JavaScript.html">
-        <div class="box">
-          <p>JavaScript vs. Ruby<br>
-             1/12/2015</p>
-        </div>
-      </a>
-      <a href="t8-tech.html">
-        <div class="box">
-          <p>Active Record Spinning<br>
-             1/24/2015</p>
-        </div>
-      </a>
-    </section>
-    <hr>
-    <section>
-      <h1 class="break">Cultural</h1>
-      <a href="c1-chefs-kitchen.html">
-        <div class="box">
-          <p>Cultural Blog<br>
-          11/21/2014</p>
-        </div>
-      </a>
-      <a href="c3_thinking-style.html">
-        <div class="box">
-          <p>More Culturing<br>
-            12/3/2014</p>
-        </div>
-      </a>
-      <a href="c4-tech-issues.html">
-        <div class="box">
-          <p>Technoschools<br>
-            12/11/2014</p>
-        </div>
-      </a>
-      <a href="c5-feedback.html">
-        <div class="box">
-          <p>Peer Pairing<br>
-            12/16/2014</p>
-        </div>
-      </a>
-      <a href="c6-stereotype-threat.html">
-        <div class="box">
-          <p>Stereotyping<br>
-            1/10/2015</p>
-        </div>
-      </a>
-      <a href="c7-values.html">
-        <div class="box">
-          <p>Values<br>
-            1/12/2015</p>
-        </div>
-      </a>
-      <a href="c8-conflict.html">
-        <div class="box">
-          <p>Conflict<br>
-            1/24/2015</p>
-        </div>
-      </a>
-    </section>
-  </div>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lukas Jones | Web Developer</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
 
 
-  <footer>
-    <ul>
-        <li>
-          <a href="https://github.com/lukasjones"><img src="../images/github.png" alt="github"/></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/lukasjones21"><img src="../images/twitter.png" alt="twitter"/></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/profile/view?id=377096265&trk=nav_responsive_tab_profile"><img src="../images/linkedn.png" alt="linkedin"/></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=100007700505700"><img src="../images/facebook.png" alt="facebook"/></a>
-        </li>
-        <li>
-          <a href="https://plus.google.com/u/0/110090803354990316106/posts"><img src="../images/google_plus.png" alt="google"/></a>
-        </li>
-      </ul>
-  </footer>
-    </section>
+    <header>
+      <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <!-- <h1><a href="#"></a></h1> -->
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
 
-  <!-- </div> -->
+          <section class="top-bar-section">
+            <ul id="header-nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html"  class="selected">Blog</a></li>
+              <li><a href="../resume.html">Resume</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="large-12">
+          <h1 class="title">Lukas Jones</h1>
+          <h2 class="title">Web Developer</h2>
+        </div>
+      </div>
+    </header>
 
-</body>
+
+
+    <div class="row">
+      <div class="large-6 medium-6 small-12 columns center">
+        <h3 class="white">Cultural</h3>
+        <ul class="bg-white">
+          <li>
+            <a href="#" data-reveal-id="c1">Cultural Blog</a>
+            <div id="c1" class="reveal-modal" data-reveal>
+              <h1>Cultural Blog</h1>
+                <h2>Challenge 11</h2>
+                <h3>11/21/2014</h3>
+                <hr class="no-space">
+                <p>
+                  The DBC experience explained by Shereef is both awe inspiring and intimidating.  I believe in the mission of making this the best experience for you personally and helping others to achieve that goal for themselves.  My impression is that the people who come to this school are interested and excited about learning and that's exactly what I was hoping for when I signed up.
+                </p>
+                <p>
+                  I see myself struggling in the beginning to open up about what I don't know.  I've been working on my own for a while now and I've been relying solely on my own ability to comprehend and learn.  It's definitely going to be an adjustment.  A good adjustment though and I'm very excited to make it happen.
+                </p>
+                <p>
+                  I had my first peer pairing session today and I was super nervous!  I didn't know what to expect but it turned out great!  We both took turns driving and navigating and by the end of the session I felt like I had gained so much more than if I had done the challenge alone.  All in all, I'm just super stoked to be here and now I can't wait to pair with the rest of you!
+                </p>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="c3">More Culturing</a>
+            <div id="c3" class="reveal-modal" data-reveal>
+              <h1>More Culturing</h1>
+              <h2>Exploring my Thoughts and Feelings</h2>
+              <h3>12/3/2014</h3>
+
+              <hr class="no-space">
+              <p>
+                When we started week 1, I had a negative emotional experience that made it really hard to focus and stay motivated.  As the weeks are going by, I'm getting better (more focused and motivated and emotionally stable) and the content is getting harder so it's working out.  Aside from this, the hardest part has been getting comfortable socializing with strangers and exposing my insecurities.
+              </p>
+              <p>
+                I think meditation and exposure have been really key to overcoming some of these barriers.  My Gregorc thinking style is Abstract Random which really does fit my personality.  I definitely do not thrive in a competitive work environment and I definitely enjoy learning with projects that I can personalize.  Alot of it fits for me, but a lot of the other styles fit pretty well too so I don't think I will be limiting my learning to just one category.
+              </p>
+
+              <p>
+                The plan to make things better is to use pairing sessions to really explore the different learning styles.  If my partner is more concrete sequential, then I will adhere a little more to their learning style. I think this will be beneficial to solidfying my understanding of concepts.  I strive to have a growth mindset as much as possible!  I think that the ideas mentioned before will be beneficial in keeping the growth mindset.  In addition to that, I plan to find some other activity that I can use to de-stress after a day of coding so that I can keep my mind in balance.
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="c4">TechnoSchools</a>
+            <div id="c4" class="reveal-modal" data-reveal>
+              <h1>Technoschools</h1>
+              <h2>Or lack there of</h2>
+              <h3>12/11/2014</h3>
+              <hr class="no-space">
+              <p>
+                This was actually hard to choose a topic.  At first I didn't really know what to pick but after searching around a little bit the choices were all so interesting.  Definitely got lost down some internet rabbit holes on cyber friendships and ruby programming issues.  The topic that really hit home is actually something my dad is working on.  The standardization of technology in the education system.
+              </p>
+              <p>
+                Data shows that there is a huge gap in the amount of people who can program and the amount of jobs that require someone with programming skills.  There isn't a standardized set of computer courses throughout schools that will create the technologically well versed people we need in the job force.  That being said, people are working on fixing it.
+              </p>
+              <p>
+                There is an article about how Bill Gates and Mark Zuckerberg have donated a combination of nine million dollars to the cause of creating faster internet connection for kids at school.  A big part of the problem is funding.  We just can't afford to have every kid have a personal device but, they are trying to get there with estimations of achieving their goal by 2017.  It sounds idealistic to me but I think it's a good goal.
+              </p>
+              <p>
+                Personally, I think it's nice that there will be jobs for me when I get out into the field, but I do see the problem in terms of society.  Our world is getting more and more technologically advanced and if we don't start producing more people who fit into that world I think something will break.  Whether that be the economy or the technology, who knows but it won't be good...
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="c5">Peer Pairing</a>
+            <div id="c5" class="reveal-modal" data-reveal>
+              <h1>Peer Pairing</h1>
+              <h2>Peering at Peer Pair Pear eaters</h2>
+              <h3>12/16/2014</h3>
+              <hr class="no-space">
+              <p>
+                Peer pairing has been the most useful learning tool I have used while partaking in phase 0.  I find that when you can bounce ideas off of people, it's much easier to differentiate the stupid ideas from the brilliant ones.  The social dynamic is also really nice.  Coding alone is fun because you are totally in control but it gets a little old after a while.  It's more entertaining and thought provoking to work with a partner.  Especially when you are both bouncing ideas off of each other!  It's definitely hard sometimes too though.  Establishing a driver and navigator in the beggining and sticking to your guns about your plan is something that my pairing could include more of.  I try hard to play my role but sometimes my partners get excited and forget and it's kind of awkward and frustrating to have to reel them back in.  Also sometimes I feel like I am understanding the concepts faster than my partner and I want to go, go, go but I totally get that accomodating to your partner is good for both of you and I definitely would want someone who is faster than me to be accomodating too.
+              </p>
+              <p>
+
+              </p>
+              <p>
+                Based of off reading the reviews people have given me, I see a pattern of people telling me that I am quiet and could do to speak up a little more.  They think that I have good input when I do speak but that sometimes it feels like I am holding back.  The other main point is learning to better explain my thoughts.  Sometimes I am flustered in the beggining of my pairing sessions and it takes me a while to get in a flow but once I do, I think my wording gets better and my statements are a little more concise.  I will definitely work on getting into that flow state earlier.  The more practice, the better my skills will get so I look forward to getting better!
+              </p>
+              <p>
+                Writing feedback was really hard in the beginning!  Looking for people's flaws has been something I actively tried to avoid in life.  Mostly because I prefer to focus on the good and it's not really my business to try to fix other people's issues.  That being said, as the weeks have gone by, I have found it easier to think of things that people can work on and write it in a way that doesn't make them want to punch me in the face. It was definitely the hardest part of the feedback writing process and still is though.
+              </p>
+              <p>
+                Overall, peer pairing is the reason I joined a bootcamp in the first place.  Learning the mechanics and social responsibilities of working with other programmers is, in my opinion, so important to becoming a good programmer.  I also find working with people who are equally stoked on programming is worth so much! They keep the excitement level up and you get to make friends along the way!  This program is already everything I wanted it to be and I'm so excited to see where it takes me.  So to sum up, peer programming is the bee's knees.
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="c6">StereoTyping</a>
+            <div id="c6" class="reveal-modal" data-reveal>
+              <h1>Stereotyping</h1>
+              <h2>Typing</h2>
+              <h3>1/10/2015</h3>
+              <hr class="no-space">
+              <p>
+                Today I'm going to write about stereotype threat.  What is stereotype threat you ask?  Good question.  Stereotype threat is the danger that a negative stereotype can influence the outcome of certain situations in a bad way.  For example, If you are in a group that is stereotyped at being worse at science than another group and you do a test with that in mind.  Your fear of fulfilling that stereotype can actually make you do worse on the test than you would if there were no stereotype.
+              </p>
+              <p>
+                Personally I haven't knowingly felt the affects stereotype threats with regards to academics but I think I've felt them in other aspects of my life.  The talk that Claude Steele gave gives an example of white people being stereotyped as racist and I have definitely tried hard not to conform to that stereotype.  Sometimes though, in trying to avoid something, you overthink things and end up being the thing you were trying to avoid.  The middle school I went to was pretty tough and I was not.  There were a lot of fights that broke out and the majority of people fighting were black.  Thus I developed an almost overly friendly attitude with black people that I wouldn't have had if I wasn't afraid of the stereotype I had created in my mind.  I have mostly overcome my irrational fear nowadays but sometimes I wonder if I'm treating some people better than others.
+              </p>
+              <p>
+                My whole life I've tried to treat everyone the same.  That was how I was raised and I think for the most part I do a pretty good job.  That being said, there are some stereotypes that I listen to.  I bike to a climbing gym near an asian mall and I am much more aware of the driving there which has saved me from some pretty serious crashes.  I know it's dangerous to judge people without getting to know them first but I don't think that you should just throw out all stereotypes at all times.  I guess my rule of thumb is when you are meeting someone for the first time they get a clean slate.  No stereotypes, no cover judging just honest getting to know them.  However, when you are dealing with people out in the day to day you have to keep some stereotypes in the back of your head so you can avoid potentially dangerous situations.  Every time I try to have this conversation with people they poo poo me for validating stereotypes but I think it's important to use common sense and not just throw out everything you have learned in the world.
+              </p>
+              <p>
+                So I started this post writing about stereotype threat and it kind of morphed into a conversation about stereotypes.. Oh well.  Hope you enjoyed it!
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="c7">Values</a>
+            <div id="c7" class="reveal-modal" data-reveal>
+              <h1>Values</h1>
+              <h3>11/25/2014</h3>
+              <hr class="no-space">
+              <p>
+                This week I'm going to write to you about the values that are importan to me.  This is a follow up of last weeks blog which was about stereotype threat.  Apparently, on of the things you can do to combat stereotype threat is affirmation or knowing the values that are important to you and being true to them.
+              </p>
+              <p>
+                The values that resonate most strongly for me when I'm feeling proud or happy are accomplishment, Challenge, Compassion, Courage, Empathy, Friendship, Inspiration, Personal Developement, Tranquility, Adventure, Efficiency, Helping others, Self-reliance, Will-power.  There are definitely more but these are the ones that really pump me up.  I would say 50% of the time I live up to these values and the other 50% is spent trying to live up to them.
+              </p>
+              <p>
+                The value that probably resonates with me the most is compassion.  It's something that I've always believed is the answer to so many of life's problems.  Some of the best and purpose filled experiences I have had in my life lie in the wake of compassionate action.  My friend recently came to me with the question "What do I do now?".  She is lost in life as I am lost in life.  She's looking for something meaningful and I didn't have an answer for her.  All I could do was say that it's OK to feel that way, that I'm here to talk about it and that she's not alone.  I'm not always compassionate and I admit to that but it only means that I have something to strive to be more of.
+              </p>
+              <p>
+                Strong values definitely have the potential to mediate stereotype threat.  I could see believing strongly in your own will-power crushing the stereotype threat that you're not as smart as another group.  Believing strongly in courage could crush the stereotype of being racist by letting you not be afraid that you will act diferently with different people.  I totally understand where Claude Steele was coming from and I think he's spot on!
+              </p>
+              <p>
+                Don't really know how to wrap this one up so... Till next time!
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="c8">Conflict</a>
+            <div id="c8" class="reveal-modal" data-reveal>
+              <h1>Conflict</h1>
+              <h2>Don't come at me bro!</h2>
+              <h3>1/24/2015</h3>
+              <hr class="no-space">
+              <p>
+                The topic today is conflict.  So let me tell you about one I had once and then we can analyze what I did and whether or not I responded to the situation in a good way.
+              </p>
+              <p>
+                Once upon a time, I had a roommate who got a puppy with his girlfriend (who also lived with us).  This puppy was a pitbull boxer mix which they named America.  To my dismay, my roommate and his girlfriend did not actually like training the dog.  They just wanted to have something cute but training it to poop and pee outside was apparently not on their puppy having schedule.  Naturally after stepping in multiple dukies (in shoes and bare feet) I was fed up.  I had let them know about the dukie incidents but I hadn't told them how it made me feel so I let them know how frustrating it was and that they needed to take better care of their dog.  They didn't seem to care about my frustrations though. I ended up trying to train the dog which yielded some results but was equally frustrating because I had not signed up for that.  By the time I moved out nothing had changed significantly except for my ability to avoid stepping in poops.
+              </p>
+              <p>
+                If I could go back, I would do a couple things differently.  For one, I would have had a talk with them before they got the dog and explained what that means in terms of training a puppy and respecting the shared space that we all have to occupy.  I also would have set up some ground rules.  From this experience, I learned that some people should not get dogs and if you don't tackle the problem right from the beginning, you might end up in a poopy situation...
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="large-6 medium-6 small-12 columns center">
+        <h3 class="white">Technical</h3>
+        <ul class="bg-white">
+          <li>
+            <a href="#" data-reveal-id="t1">Git it?</a>
+            <div id="t1" class="reveal-modal" data-reveal>
+              <h1>Do you Git it?</h1>
+              <h2>version control, git and git hub</h2>
+              <h3>11/20/2014</h3>
+              <hr class="no-space">
+              <p>
+                Version control is awesome for many reasons.  You can work on a project and make commits(save points) along the way that store that version of the project at that time.  This is cool because if you get a bug in your program that you don't know how to fix, you can always go back to a previous version of the code that does work.  Version control also makes it much easier for many people to work on a project and not overwrite the work of the others.  It also makes it really hard to lose your project because there are so many people who have working versions of your project and if your using an online version control website, you also have access to your project there.
+              </p>
+              <p>
+                Git helps you track your changes by monitoring the files in a repository which is essentially the folder all your files and subfolders are in.  When you make a change to a file, like edit a title of the page or add a new file, it recognizes that you made a change and makes a note of it.  When you have made all the changes you want to for the current session, you can then write git status to see what you changed.  You can then save (commit) that work so the computer remembers that version of the project at that point in time with the command git commit -m "commit message".  You can also use git commit -v which opens the commit message up in a text editor.
+              </p>
+              <p>
+                GitHub is an amazing tool to have because it keeps all of your work on a website that you can access from anywhere.  This makes collaborating with people super simple.  All you have to do is send them the link and they can copy your project and start working on it.  When they are done, all they have to do is send a pull request (a request to merge the changes made to the project) which will then be approved or denied by the owner of the project depending on if your contribution is worthy.  When you store your code on Github, you can use an open source license to allow other people to use and build off your project which opens a up a lot of potential!
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="t2">What position is that</a>
+            <div id="t2" class="reveal-modal" data-reveal>
+              <h1>What position is that?</h1>
+              <h2>relative, absolute, fixed and.. static</h2>
+              <h3>11/27/2014</h3>
+
+              <hr class="no-space">
+              <p>
+                So position is a CSS property that you can assign to an element that affects the location that an element is placed in relation to itself and other elements.  There are four options you can choose to set position as: relative, absolute fixed and static.
+              </p>
+              <p>
+                Position static is the default value for all elements in css.  Basically it means that it will be positioned normally on the page.  There are no special qualities to it's position.
+              </p>
+              <p>
+                Position relative means that the element is positioned relative to itself. Therefor if you give it an additional property and value of "top: 10px;" you will be positioning it 10px down from where the element is on the page, not in the document.  According to css-tricks.com, this also opens up a cool ability to absolutely position elements within the relatively positioned elements and they will stay absolutely positioned relative to the relative element.
+              </p>
+              <p>
+                Position absolute means that the position is determined by the top left bottom right values specified in relation to the parent elment.  For example if you have a paragraph element in a div element and the paragraph has absolute positioning and top: 30px; and left: 40px;, that element will be 30 pixels from the top and 40 pixels from the left of the inside walls of the div element.
+              </p>
+              <p>
+                Fixed positioning means that the element will stay where it is in relation to the viewport.  This means that when you scroll down the element stays in a fixed position visible on the screen.
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="t3">Arrays vs Hashes</a>
+            <div id="t3" class="reveal-modal" data-reveal>
+              <h1>Arrays vs Hashes</h1>
+              <h2>Harray!</h2>
+              <h3>12/3/2014</h3>
+              <hr class="no-space">
+              <p>
+                So, I'm going to start of by introducing what arrays and hashes are exactly.  In the broadest sense, arrays and hashes are containers that store data and information.  This could be numbers, text, other arrays, other hashes, methods and probably other stuff I can't think of right now.  I would say that alot of the time, they are used to model something in real life like a bank account or a person's profile information.  Below, I have included an example of an array and a hash.
+              </p>
+              <code>
+                # This is an array
+                <br>
+                my_array = [1, "two", [3, 4], def count return 5 end]
+                <span class="example">ex.1</span>
+              </code>
+              <code>
+                # This is a hash
+                <br>
+                my_hash = {one: 1, two: 2, three: "three", four: [4, 5]}
+                <span class="example">ex.2</span>
+              </code>
+              <p>
+                Arrays and Hashes are both similar and unique.  Both have an index that you use to access the contents in the relative object.  The way you access these contents is very different however.  With an array, you use a numer that corresponds to the information you're trying to access's position in the array (see example 3).  It's important to know that when you access an array, the first piece of information is accessed with the number 0, not 1.  What you're seeing when you're defining values in the hash, is a key (the first word with a :) and a value (the second piece that could be any of the types of data).  When you access a hash, it's similar notation except you aren't using a number.  Instead, you are using the key to access the value (see example 4).
+              </p>
+              <code>
+                #to access an array
+                <br>
+                my_array[1]  # => 2
+                <br>
+                my_array[2]  # => [3, 4]
+                <span class="example">ex.3</span>
+              </code>
+              <code>
+                # To access a hash
+                <br>
+                my_hash[:one]  # => 1
+                <br>
+                my_hash[:four]  # => [4, 5]
+                <span class="example">ex.4</span>
+              </code>
+              <p>
+                Another way hashes and arrays differ is in the different ways to add and remove elements from them.  Adding to or changing values in arrays and hashes is similar to their way of calling them except that you put an equal sign after and a value(see examples 5 and 6).
+              </p>
+              <code>
+                #to access an array
+                <br>
+                my_array[1] = "ObiOne"  # => "ObiOne"
+                <br>
+                my_array[2]  # => [3, 4]
+                <span class="example">ex.3</span>
+              </code>
+              <code>
+                # To access a hash
+                <br>
+                my_hash[:one]  # => 1
+                <br>
+                my_hash[:four]  # => [4, 5]
+                <span class="example">ex.4</span>
+              </code>
+              <p>
+                It's worth noting that there is a different way to create and access hashes.  You can use my_hash = {"one" => 1, "two" => 2} to create the hash and access it by using my_hash["one"] which will return 1.
+              </p>
+              <p>Hope this has been helpful!</p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="t4">Teaching the Group</a>
+            <div id="t4" class="reveal-modal" data-reveal>
+              <h1>Teaching the group</h1>
+              <h2>.group_by group</h2>
+              <h3>12/11/2014</h3>
+              <hr class="no-space">
+              <p>
+                This week I chose to study the Enumerable method: #group_by because it was the method that made I understood the least.  #group_by is a method that turns it's input into a hash.  Typically you use range of numbers as the object you are calling the method on and then you pass the method an argument like i % 4.  This will return a hash where the answer will be the key and the values that you would plug into i to get the answers are stored seperately in an array.  If you look down, I've included a coding example.
+              </p>
+              <code>
+                (1..8).group_by{|i| i % 4 } # => {1=>[1, 5], 2=>[2, 6], 3=>[3, 7], 0=>[4, 8]}
+              </code>
+              <p>
+                Having experimented with the code a little bit, it looks like there are a bunch of ways you could use this command.  if you plug in an i > 5 than it will return a hash with two keys false and true.  False has all the numbers less than 5 and true has all the numbers greater than 5.  You could also use this method to find out the times tables of different  numbers like i * 9 will give you the keys as the answer(9=>[1], 18=>[2] ...).
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="t5">Stay Classy</a>
+            <div id="t5" class="reveal-modal" data-reveal>
+              <h1>Stay Classy California</h1>
+              <h2>All About Classes</h2>
+              <h3>12/16/2014</h3>
+              <hr class="no-space">
+              <p>
+                Hello blog readers, <br>
+                this week, we are going to be talking about classes if you couldn't tell by the title.  Classes, like pretty much everything else in Ruby, are objects.  They have the same inherent methods as objects and the same properties of an object.  The big difference between classes and other ruby objects though, is the ability to create new objects from said classes. Let me explain that a little better.
+              </p>
+              <p>
+                Classes are defined by typing class "ClassName" with camel case. You may then choose to define an initialize method that will run every time you create a new object with that class otherwise known as instantiating or creating and instance.  In this initialize method, it's common to set some of the variables that you will be using.  For example, if you were creating a person object you might want to set an age and name.  These variables are set to be something called an instance variable.  Instance variables are prefixed with the '@' symbol.  The reason we use these is because they can be accessed by any of the methods in a class but won't interfere with other variables outside of the class.  After the initialize method, you usually create some other methods that are specific to that class.  For example you could create a greeting method that would say "Hello everyone!" when called or an introduction method that said "My name is 'name' and I am '22'". Then all you have left to do is end your methods and class declaration and instantiate a new object from the class.  The syntax for that is ClassName.new(variables that go into initialize method).  In our example it would be me = Person.new(22, "Lukas"). If you look below, There are examples of everything talked about in this method the way it would look in a ruby file.
+              </p>
+              <code>
+                class Person <br>
+                def initialize(age, name)  <br>
+                @age = age <br>
+                @name = name <br>
+                end <br>
+                <br>
+                def greeting <br>
+                puts "Hello everyone!" <br>
+                end <br>
+                <br>
+                def introduction <br>
+                puts "My name is #{@name} and I am #{@age} years old" <br>
+                end <br>
+                end <br>
+                <br>
+                me = Person.new(22, "Lukas") <br>
+                me.greeting #=> "Hello everyone!" <br>
+                me.introduction #=> "My name is Lukas and I am 22 years old"
+              </code>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="t6">OOP</a>
+            <div id="t6" class="reveal-modal" data-reveal>
+              <h1>OOPsy</h1>
+              <h2>Daisy</h2>
+              <h3>1/9/2015</h3>
+              <hr class="no-space">
+              <p>
+                This week we were given the assignment of researching a specific part of Object Oriented Programming (OOP).  I like to choose topics that I understand the least so I can learn the most from it. With that in mind; today we will be talking about class methods.
+              </p>
+              <p>
+                  A class method is a method that is called directly on the class.  For example, if you have a class Car and a class method drive then a class method being called on Car would look like "Car.drive".  This is different from instance methods where the notation would be "Car.new.drive".
+              </p>
+              <p>
+                Class Methods can be called in a couple different ways which are shown below in the code section.
+              </p>
+              <code>
+                # First way to define class method<br>
+                class Car<br>
+                  <span class="tab"></span>def self.drive<br>
+                    <span class="tabtwo"></span>puts "class method driving"<br>
+                  <span class="tab"></span>end<br>
+                end<br>
+                <br>
+                # Second way to define class method<br>
+                class Car<br>
+                  <span class="tab"></span>class << self<br>
+                    <span class="tabtwo"></span>def drive<br>
+                      <span class="tab"></span><span class="tabtwo"></span>puts "class method driving"<br>
+                    <span class="tabtwo"></span>end<br>
+                  <span class="tab"></span>end<br>
+                end<br>
+                <br>
+                # Third way to define class method<br>
+                class Car<br>
+                end<br>
+                new_car = Car.new<br>
+                def new_car.drive<br>
+                puts "class method driving"<br>
+                end<br>
+
+              </code>
+              <p>
+                Class methods are used to perform an action on the class as a whole.  There seems to be a good amount of people who believe class methods are unnecessary.  At this point, I don't know enough about their reasoning to confirm or deny it.  They say that people who rely too heavily on class methods turn their OOP into Procedural Programming.  Since we're working in an Object Oriented programming language right now I guess it's better to just stick with instance methods instead of falling into bad habits that will be hard to get out of later.
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="t7">Ruby/Javascript Docs</a>
+            <div id="t7" class="reveal-modal" data-reveal>
+              <h1>Ruby/JavaScript Documentation</h1>
+              <h2>Differences</h2>
+              <h3>1/12/2015</h3>
+              <hr class="no-space">
+              <p>
+                We started learning JavaScript this week and one of the first things I noticed (coming from Ruby) is the lack of preprogrammed methods in JavaScript.  In Ruby there are hundreds of pre programmed methods for arrays and hashes and strings and there are lots of different ways to do different things.  In Javascript, it seems like there aren't nearly as many options.  It's definitely taking some getting used to.
+              </p>
+              <p>
+                As opposed to Ruby, JavaScript has many methods for manipulating the DOM.  If you don't know what Manipulating the DOM is, here is a brief explanation.  The DOM stands for the Document Object Model with is a representation of the html elements on your page in a sort of tree like structure.  Basically it shows them in a way where you can see which elements are parents and which elements are children.  Manipulating the DOM means changing something in the DOM.  For example if you had an ul with an id of "list" you could select that ul using the .getElementByID method and change something about it like the inner html or the style applied to it.  This creates a really cool dynamic functionality where you can write functions that do things and make those things happen when events happen like a click or a hover.  Its cool to be learning it so we can combine these tools on our rails apps.
+              </p>
+              <p>
+                I look forward to diving deeper in to JavaScript through out these next weeks and understanding better why it's structured the way it is.
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+          <li>
+            <a href="#" data-reveal-id="t8">Active Record Spinning</a>
+            <div id="t8" class="reveal-modal" data-reveal>
+              <h1>Active Record Spinning...</h1>
+              <h3>1/24/2015</h3>
+              <hr class="no-space">
+              <p>
+                This week I'm going to write about Active Record.  Active record is something that has stumped me time and time again.  I used to use team treehouse and they had a class on it which just confused the heck out of me so I'm hoping now that I have a little more knowledge of Ruby, I can tackle this problem with more confidence!
+              </p>
+              <p>
+                Active record is a class with a mega ton of awesome preprogrammed methods. According to the Ruby website, activerecord is also the M in MVC (Model View Controller) because it's what you use to create models in your Rails applications.  If you don't know anyting about models from mvs, models are used to model data! I know, big shock!  Models typically get data from the database and then send it back to the controller so it can do something else with it.  Some of the super active record powers include: Representing models and their data and thier associations, validating models before they go to the database and performing database operations.  Basically it makes it so you don't have to program as many functions to interact with your model.
+              </p>
+              <p>
+                I recently started a <a href="https://www.railstutorial.org/book" class="inline">RUBY ON RAILS TUTORIAL (3RD ED.)</a> by Michael Hartl and we dived into active record a bit.  We used ActiveRecord::Base to create a user model which we used to put validations on specific columns in the table that is represented by the user model.  A validation if you were wondering, is a piece of code that checks if the data is the way you want it.  For example, in this tutorial, I am putting a validation on the presence of email and password. I put a validation on the format of the email as well which ensures that the email is not just a bunch of incoherent letters.  In this tutorial, ActiveRecord::Migration is also used to add columns to the table.  Some of this is done atutomatically when you use the rails generate command but you can also input it by hand by going to the class that inherits from ActiveRecord::Migration and adding columns and their types to the table.
+              </p>
+              <p>
+                To be honest, even after all my research and tutorial, I still don't completely understand it.  I'm hoping that more exposure with it will give me the knowledge that I'm lacking right now.
+              </p>
+              <a class="close-reveal-modal">&#215;</a>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="icon-bar five-up">
+      <a href="https://www.facebook.com/profile.php?id=100007700505700" class="item">
+        <img src="../img/facebook.png" >
+        <label>Facebook</label>
+      </a>
+      <a href="https://github.com/lukasjones" class="item">
+        <img src="../img/github.png" >
+        <label>Github</label>
+      </a>
+      <a href="https://plus.google.com/u/0/110090803354990316106/posts" class="item">
+        <img src="../img/google_plus.png" >
+        <label>Google+</label>
+      </a>
+      <a href="https://www.linkedin.com/profile/view?id=377096265&trk=nav_responsive_tab_profile" class="item">
+        <img src="../img/linkedn.png" >
+        <label>LinkedIn</label>
+      </a>
+      <a href="https://twitter.com/lukasjones21" class="item">
+        <img src="../img/twitter.png" >
+        <label>Twitter</label>
+      </a>
+    </div>
+
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>

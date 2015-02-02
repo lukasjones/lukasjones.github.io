@@ -1,0 +1,170 @@
+
+/******************** GENERAL STYLES ********************/
+
+
+.center {
+  text-align: center;
+}
+
+body {
+  background: rgba(0,0,0,0.9);
+}
+
+/******************** HEADER STYLES ********************/
+
+header {
+  background: grey;
+  padding-bottom: 30px;
+  height: 450px;
+  background: url(../img/code_bw.jpg);
+  margin-bottom: 200px;
+}
+
+nav.top-bar {
+text-align:center;
+}
+section.top-bar-section {
+display: inline-block;
+background: rgba(255,255,255,0.0);
+}
+.top-bar {
+  background: rgba(255,255,255,0.0);
+}
+div.contain-to-grid {
+  background: rgba(255,255,255,0.0);
+}
+ul#header-nav li a {
+  padding: 2px 30px;
+  font-size: 1.1em;
+  color: white;
+  background: rgba(255,255,255,0.4);
+  letter-spacing: 2px;
+}
+
+
+ul#header-nav li a.selected {
+  background: rgba(0,0,0,0.3);
+}
+
+ul#header-nav li {
+  background: rgba(255,255,255,0)
+}
+
+ul#header-nav {
+  rgba(255,255,255,0)
+}
+
+
+
+ul#header-nav li a:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+h1.title, h2.title {
+  text-align: center;
+
+}
+
+h1.title {
+  margin-top: 70px;
+  font-size: 4em;
+  color: rgba(255, 168, 0, 0.5);
+}
+
+h2.title {
+  color: rgba(255,255,255,0.8);
+}
+
+
+
+/******************** ABOUT STYLES ********************/
+
+h1.center, h5.center {
+  color: rgba(255,255,255,0.8);
+}
+
+.link {
+  padding-bottom: 200px;
+}
+
+
+a.boxed {
+  padding: 100px;
+  color: white;
+  -webkit-transition: color 0.75s, background 0.75s;
+  transition: color 0.75s, background 0.75s;
+}
+
+a.boxed:hover {
+  color: rgba(255, 168, 0, 0.7);
+  background: white;
+}
+
+hr {
+  margin: 200px 0;
+}
+
+
+/******************** ICON BAR STYLES ********************/
+
+
+.icon-bar {
+  margin-top: 190px;
+  background: rgba(255, 168, 0, 0.5);
+}
+
+.icon-bar a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+
+/********************* FORM STYLES ******************/
+
+input[type="text"] {
+  background: lightgrey;
+}
+
+input[type="text"]:hover {
+  background: white;
+}
+
+input[type="text"]:focus {
+  background: white;
+}
+
+textarea {
+  height: auto;
+}
+
+
+/********************** BLOG STYLES ****************/
+
+.white {
+  color: white;
+}
+
+.bg-white {
+  background: rgba(200,200,200,1);
+}
+
+
+
+
+.bg-white a {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.bg-white a:hover {
+  background: white;
+}
+
+hr.no-space {
+  margin: 0;
+  padding: 0;
+}
+
+
