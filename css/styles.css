@@ -116,7 +116,23 @@ hr {
 .icon-bar a:hover {
   background: rgba(255,255,255,0.3);
 }
+/********************* Portfolio STYLES ******************/
 
+.big-box {
+  background: white;
+  display: inline-block;
+  text-align: center;
+  padding: 100px;
+
+}
+
+.big-box:hover {
+  background: black;
+}
+
+.big-box p {
+  padding: 50%;
+}
 
 /********************* FORM STYLES ******************/
 
